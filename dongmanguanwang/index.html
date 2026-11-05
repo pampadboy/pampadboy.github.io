@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>动漫官网在线观看免费-动漫官网在线观看免费_免费动漫在线看_新番追更与番剧目录</title>
+<meta name="description" content="动漫官网在线观看免费主题首页，介绍免费动漫在线观看的常用入口、番剧目录、新番追更与观看须知，帮助观众快速找到想看的内容并了解播放范围与更新节奏。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1f3b'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23ffb347' stroke-width='4'/%3E%3Cpath d='M27 23l16 9-16 9z' fill='%23ffb347'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#161a2e;
+  --ink-soft:#3c4258;
+  --paper:#f6f4ef;
+  --card:#ffffff;
+  --line:#e2ddd3;
+  --accent:#d94f2b;
+  --accent-soft:#fdeee8;
+  --gold:#e8a33d;
+  --navy:#1b1f3b;
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img,svg{display:block;max-width:100%;}
+.wrap{width:min(1120px,92vw);margin:0 auto;}
+.skip{position:absolute;left:-9999px;top:0;background:var(--navy);color:#fff;padding:10px 16px;z-index:99;border-radius:0 0 8px 0;}
+.skip:focus{left:0;}
+
+/* header */
+header.site{
+  position:sticky;top:0;z-index:50;
+  background:rgba(27,31,59,.96);
+  color:#fff;
+  backdrop-filter:blur(6px);
+  border-bottom:3px solid var(--gold);
+}
+.head-inner{display:flex;align-items:center;gap:24px;padding:12px 0;flex-wrap:wrap;}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.06rem;letter-spacing:.5px;color:#fff;}
+.logo .mark{width:34px;height:34px;flex:none;}
+nav.main{margin-left:auto;}
+nav.main ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap;}
+nav.main a{font-size:.94rem;color:#dfe1ec;padding:6px 2px;border-bottom:2px solid transparent;transition:.2s;}
+nav.main a:hover,nav.main a:focus{color:#fff;border-bottom-color:var(--gold);}
+.btn-dl{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--accent);color:#fff;font-weight:700;font-size:.9rem;
+  padding:8px 16px;border-radius:999px;
+  pointer-events:none;opacity:.92;
+}
+
+/* hero */
+.hero{
+  background:linear-gradient(160deg,#1b1f3b 0%,#2a3157 55%,#3a2a45 100%);
+  color:#fff;padding:56px 0 48px;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;
+  border-radius:50%;background:radial-gradient(circle,rgba(232,163,61,.28),transparent 68%);
+}
+.hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:44px;align-items:center;position:relative;z-index:1;}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:2px;color:var(--gold);border:1px solid rgba(232,163,61,.55);padding:3px 12px;border-radius:999px;margin-bottom:16px;}
+h1{font-size:clamp(1.6rem,3.6vw,2.5rem);line-height:1.35;margin:0 0 16px;font-weight:800;letter-spacing:.5px;}
+.hero p{color:#d5d8e6;font-size:1rem;margin:0 0 24px;max-width:44em;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-primary,.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;
+  font-weight:700;font-size:.95rem;transition:.2s;
+}
+.btn-primary{background:var(--gold);color:#241a06;}
+.btn-primary:hover{background:#f2b555;transform:translateY(-1px);}
+.btn-ghost{border:1px solid rgba(255,255,255,.45);color:#fff;}
+.btn-ghost:hover{background:rgba(255,255,255,.12);}
+.hero-art{position:relative;}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 12px 30px rgba(0,0,0,.35));}
+.hero-stats{display:flex;gap:28px;margin-top:32px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.15);padding-top:20px;}
+.hero-stats div{font-size:.86rem;color:#b9bed2;}
+.hero-stats strong{display:block;font-size:1.25rem;color:#fff;font-weight:800;}
+
+/* sections */
+section{padding:54px 0;}
+.sec-head{margin-bottom:26px;}
+.sec-kicker{font-size:.78rem;letter-spacing:2px;color:var(--accent);font-weight:700;margin:0 0 6px;}
+h2{font-size:clamp(1.25rem,2.4vw,1.6rem);margin:0 0 8px;font-weight:800;letter-spacing:.3px;}
+.sec-head p{margin:0;color:var(--ink-soft);font-size:.96rem;max-width:52em;}
+
+/* entry cards */
+.entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 22px 20px;transition:.22s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(27,31,59,.09);}
+.card .icon{width:40px;height:40px;margin-bottom:12px;}
+.card h3{font-size:1.02rem;margin:0 0 8px;font-weight:800;}
+.card p{margin:0;font-size:.92rem;color:var(--ink-soft);}
+.card .tag{display:inline-block;margin-top:14px;font-size:.76rem;background:var(--accent-soft);color:var(--accent);padding:2px 10px;border-radius:999px;font-weight:700;}
+
+/* catalog */
+.catalog{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px;align-items:center;}
+.chip{
+  border:1px solid var(--line);background:#fff;color:var(--ink-soft);
+  padding:7px 16px;border-radius:999px;font-size:.88rem;cursor:pointer;transition:.2s;font-family:inherit;
+}
+.chip:hover{border-color:var(--accent);color:var(--accent);}
+.chip.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+.search-box{margin-left:auto;display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--paper);}
+.search-box svg{width:16px;height:16px;flex:none;opacity:.55;}
+.search-box input{border:0;background:transparent;font-size:.88rem;font-family:inherit;outline:none;width:150px;color:var(--ink);}
+.anime-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px;}
+.anime{padding:0;overflow:hidden;display:flex;flex-direction:column;}
+.cover{height:118px;display:flex;align-items:center;justify-content:center;position:relative;}
+.cover svg{width:56px;height:56px;}
+.anime-body{padding:16px 18px 18px;}
+.anime-body h3{font-size:.98rem;margin:0 0 6px;}
+.anime-body p{font-size:.85rem;margin:0 0 10px;color:var(--ink-soft);}
+.meta{display:flex;gap:8px;flex-wrap:wrap;font-size:.75rem;}
+.meta span{background:var(--paper);border:1px solid var(--line);padding:2px 8px;border-radius:6px;color:var(--ink-soft);}
+.empty{display:none;padding:30px;text-align:center;color:var(--ink-soft);font-size:.95rem;}
+
+/* notes */
+.notes-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+.note-list{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
+.note-list li{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;font-size:.93rem;color:var(--ink-soft);
+}
+.note-list li strong{display:block;color:var(--ink);font-size:.98rem;margin-bottom:4px;}
+.article-block{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;}
+.article-block p{font-size:.94rem;color:var(--ink-soft);margin:0 0 14px;}
+.article-block p:last-child{margin-bottom:0;}
+.article-block h3{font-size:1.05rem;margin:0 0 10px;}
+
+/* faq */
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:0;margin-bottom:12px;overflow:hidden;}
+.faq-item summary{
+  cursor:pointer;list-style:none;padding:16px 20px;font-weight:700;font-size:.96rem;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:"+";font-size:1.2rem;color:var(--accent);font-weight:700;}
+.faq-item[open] summary::after{content:"−";}
+.faq-item p{margin:0;padding:0 20px 18px;font-size:.92rem;color:var(--ink-soft);}
+
+/* cta strip */
+.strip{
+  background:linear-gradient(120deg,#1b1f3b,#33305a);color:#fff;border-radius:var(--radius);
+  padding:34px 32px;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+}
+.strip h2{margin:0 0 6px;color:#fff;}
+.strip p{margin:0;color:#c9cde0;font-size:.93rem;}
+.strip .actions{display:flex;gap:12px;flex-wrap:wrap;}
+
+/* footer */
+footer.site{background:var(--navy);color:#aeb3c8;padding:40px 0 26px;margin-top:20px;font-size:.88rem;}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.12);}
+.foot-grid h4{color:#fff;font-size:.92rem;margin:0 0 12px;font-weight:700;}
+.foot-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+.foot-grid a:hover{color:#fff;}
+.foot-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:.98rem;margin-bottom:10px;}
+.foot-brand svg{width:28px;height:28px;flex:none;}
+.copyright{padding-top:18px;text-align:center;font-size:.82rem;color:#8a90a8;}
+
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:30px;}
+  .hero-art{max-width:320px;margin:0 auto;}
+  .notes-grid{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr;gap:24px;}
+  .search-box{margin-left:0;width:100%;}
+  .search-box input{width:100%;}
+}
+@media(max-width:560px){
+  .head-inner{gap:12px;}
+  nav.main{margin-left:0;width:100%;order:3;}
+  nav.main ul{gap:14px;}
+  .btn-dl{margin-left:auto;font-size:.82rem;padding:7px 13px;}
+  section{padding:40px 0;}
+  .hero{padding:40px 0 36px;}
+  .hero-stats{gap:20px;}
+  .strip{padding:26px 22px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="site">
+  <div class="wrap head-inner">
+    <a class="logo" href="#top" aria-label="动漫官网在线观看免费 首页">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#ffb347"/>
+        <circle cx="32" cy="32" r="17" fill="none" stroke="#1b1f3b" stroke-width="4"/>
+        <path d="M27 23l16 9-16 9z" fill="#1b1f3b"/>
+      </svg>
+      <span>动漫官网在线观看免费</span>
+    </a>
+    <nav class="main" aria-label="主导航">
+      <ul>
+        <li><a href="#entry">观看入口</a></li>
+        <li><a href="#catalog">番剧目录</a></li>
+        <li><a href="#guide">观看须知</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <a class="btn-dl" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 21h16"/></svg>
+      下载
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <div id="top"></div>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-h1">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">番剧 · 追更 · 免费观看</span>
+        <h1 id="hero-h1">动漫官网在线观看免费</h1>
+        <p>这里是围绕“动漫官网在线观看免费”整理的观看主题页：把免费动漫在线观看的常用入口、当季新番与经典番剧目录、更新节奏和观看须知放在同一处，方便你先看清内容，再决定从哪一部开始。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#catalog">浏览番剧目录</a>
+          <a class="btn-ghost" href="#guide">了解观看须知</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>4 类</strong>观看入口梳理</div>
+          <div><strong>6 部</strong>目录示例番剧</div>
+          <div><strong>4 问</strong>常见问题解答</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg">
+          <rect x="18" y="26" width="284" height="196" rx="16" fill="#12162c" stroke="#4a4f78" stroke-width="2"/>
+          <rect x="18" y="26" width="284" height="30" rx="16" fill="#232a4d"/>
+          <circle cx="36" cy="41" r="4" fill="#ff8a5c"/>
+          <circle cx="50" cy="41" r="4" fill="#ffb347"/>
+          <circle cx="64" cy="41" r="4" fill="#79c9a7"/>
+          <circle cx="160" cy="140" r="46" fill="none" stroke="#ffb347" stroke-width="4" opacity=".9"/>
+          <path d="M144 116l44 24-44 24z" fill="#ffb347"/>
+          <rect x="40" y="196" width="86" height="7" rx="3.5" fill="#3c4470"/>
+          <rect x="136" y="196" width="56" height="7" rx="3.5" fill="#3c4470"/>
+          <rect x="202" y="196" width="70" height="7" rx="3.5" fill="#ffb347" opacity=".7"/>
+          <path d="M262 62l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#ffd79a" opacity=".85"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTRY -->
+  <section id="entry" aria-labelledby="entry-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-kicker">观看入口</p>
+        <h2 id="entry-title">先分清入口，再谈免费在线观看</h2>
+        <p>搜索“动漫官网在线观看免费”时，跳出来的页面类型并不相同。下面按用途把常见入口分成四类，每类负责不同的观看任务。</p>
+      </div>
+      <div class="entry-grid">
+        <article class="card">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="#d94f2b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="5" y="9" width="38" height="26" rx="4"/><path d="M17 40h14"/><path d="M24 35v5"/><path d="M19 22l8 4-8 4z" fill="#d94f2b" stroke="none"/>
+          </svg>
+          <h3>官方站点正片</h3>
+          <p>平台自有的番剧页面，通常提供分集列表、简介与更新提示，是确认一部作品是否在播、更新到第几集的首选位置。</p>
+          <span class="tag">核对信息首选</span>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="#d94f2b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="24" cy="24" r="18"/><path d="M24 13v11l8 5"/>
+          </svg>
+          <h3>新番更新页</h3>
+          <p>按周排期的更新板块，适合追当季新番。看更新页时重点确认更新时间与集数节奏，而不是只看封面。</p>
+          <span class="tag">按周追更</span>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="#d94f2b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M8 12h32v24H8z"/><path d="M8 20h32"/><path d="M16 28h8"/>
+          </svg>
+          <h3>分类与专题</h3>
+          <p>按题材、年份或热度归类的目录页，适合不确定看什么的时候翻找。分类页的价值在于筛掉无关作品，缩小选择范围。</p>
+          <span class="tag">找片用</span>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="#d94f2b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 6l5 11 12 2-9 9 2 12-10-6-10 6 2-12-9-9 12-2z"/>
+          </svg>
+          <h3>作品详情页</h3>
+          <p>单部作品的介绍、声优、制作信息与相关推荐集中在这一页，决定要不要看时，详情页比播放页更有参考价值。</p>
+          <span class="tag">决定是否观看</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-kicker">番剧目录</p>
+        <h2 id="catalog-title">按题材挑选想看的番剧</h2>
+        <p>下面是六部目录示例作品，用于说明如何按题材与更新状态做选择。点击标签可以筛选，也可以在搜索框里直接输入番剧名。</p>
+      </div>
+      <div class="filter-bar" role="group" aria-label="番剧题材筛选">
+        <button class="chip active" type="button" data-filter="all">全部</button>
+        <button class="chip" type="button" data-filter="热血">热血</button>
+        <button class="chip" type="button" data-filter="日常">日常</button>
+        <button class="chip" type="button" data-filter="奇幻">奇幻</button>
+        <button class="chip" type="button" data-filter="科幻">科幻</button>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+          <input id="anime-search" type="search" placeholder="搜索番剧名" aria-label="搜索番剧名">
+        </div>
+      </div>
+      <div class="anime-grid" id="anime-grid">
+        <article class="card anime" data-cat="热血" data-name="星轨少年">
+          <div class="cover" style="background:#fdeee8;" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#d94f2b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l4 10 11 1-8 8 2 11-9-6-9 6 2-11-8-8 11-1z"/></svg>
+          </div>
+          <div class="anime-body">
+            <h3>星轨少年</h3>
+            <p>少年为参加星际竞速赛而训练，故事围绕伙伴与胜负展开。</p>
+            <div class="meta"><span>热血</span><span>周更</span><span>24 集</span></div>
+          </div>
+        </article>
+        <article class="card anime" data-cat="日常" data-name="午后面包房">
+          <div class="cover" style="background:#f6f4ef;" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#e8a33d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22c0-5 6-9 14-9s14 4 14 9v14H10z"/><path d="M10 26h28"/></svg>
+          </div>
+          <div class="anime-body">
+            <h3>午后面包房</h3>
+            <p>小镇面包房的日常群像，节奏舒缓，适合零散时间观看。</p>
+            <div class="meta"><span>日常</span><span>已完结</span><span>12 集</span></div>
+          </div>
+        </article>
+        <article class="card anime" data-cat="奇幻" data-name="雾海灯影">
+          <div class="cover" style="background:#eef2fb;" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#4a63b5" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8l12 20H12z"/><circle cx="24" cy="36" r="4"/></svg>
+          </div>
+          <div class="anime-body">
+            <h3>雾海灯影</h3>
+            <p>灯塔守夜人与海上来客的故事，带有志怪色彩的世界观。</p>
+            <div class="meta"><span>奇幻</span><span>周更</span><span>13 集</span></div>
+          </div>
+        </article>
+        <article class="card anime" data-cat="科幻" data-name="第七号舱">
+          <div class="cover" style="background:#e9f5f0;" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#2f8f6b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="14" width="30" height="20" rx="4"/><circle cx="24" cy="24" r="5"/></svg>
+          </div>
+          <div class="anime-body">
+            <h3>第七号舱</h3>
+            <p>空间站失联后，乘员逐步发现舱段之间的异常联系。</p>
+            <div class="meta"><span>科幻</span><span>周更</span><span>12 集</span></div>
+          </div>
+        </article>
+        <article class="card anime" data-cat="热血" data-name="剑风道场">
+          <div class="cover" style="background:#fdf2e2;" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#c47a1e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 36L36 12"/><path d="M30 8l10 10"/><path d="M8 40l8-2"/></svg>
+          </div>
+          <div class="anime-body">
+            <h3>剑风道场</h3>
+            <p>道场学徒的成长线，比赛段落是主要看点。</p>
+            <div class="meta"><span>热血</span><span>已完结</span><span>26 集</span></div>
+          </div>
+        </article>
+        <article class="card anime" data-cat="日常" data-name="便利店夜班">
+          <div class="cover" style="background:#f4f0fa;" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#7a5cb0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18h24v20H12z"/><path d="M18 18v-4h12v4"/><path d="M18 26h12"/></svg>
+          </div>
+          <div class="anime-body">
+            <h3>便利店夜班</h3>
+            <p>深夜便利店里的短篇故事，每集独立成篇。</p>
+            <div class="meta"><span>日常</span><span>周更</span><span>10 集</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="empty" id="empty-tip">没有匹配的番剧，换个关键词或选择“全部”试试。</p>
+    </div>
+  </section>
+
+  <!-- GUIDE -->
+  <section id="guide" aria-labelledby="guide-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-kicker">观看须知</p>
+        <h2 id="guide-title">免费观看前后值得确认的几件事</h2>
+        <p>把“动漫官网在线观看免费”当作搜索起点时，真正影响体验的是画质、更新与播放范围。下面两块分别给出操作提示和阅读说明。</p>
+      </div>
+      <div class="notes-grid">
+        <ul class="note-list">
+          <li><strong>先看集数与状态</strong>目录页标注的集数、是否完结，是判断能否一次看完的依据；连载中的作品按周更新，不必每集都重新搜索。</li>
+          <li><strong>确认播放范围</strong>同一部作品在不同地区、不同平台的可用情况可能不同，页面能播不等于处处能播，以实际播放页提示为准。</li>
+          <li><strong>留意画质与字幕</strong>清晰度档位与字幕版本通常在播放器内切换，遇到字幕缺失先检查设置，再考虑换入口。</li>
+          <li><strong>收藏代替反复搜索</strong>找到稳定的作品页后加入收藏，比每次重新搜索“动漫官网在线观看免费”更省时间。</li>
+        </ul>
+        <div class="article-block">
+          <h3>关于“免费”的边界</h3>
+          <p>免费通常指无需付费即可观看部分内容，并不等于全部番剧、全部清晰度都免费。部分平台会区分免费集与后续集，或以广告换取观看权限，这些差异会直接写在播放页上。</p>
+          <p>因此看一部作品前，先确认它属于免费区还是会员区，再决定是否投入时间。对只想随手看两集的人来说，优先选择已完结、集数较少的作品，试错成本更低。</p>
+          <p>另外，免费观看的可用性会随版权与排期调整而变化。今天能看的作品，过一段时间可能下架；目录里的信息只能作为参考，最终以播放页的实时状态为准。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-kicker">常见问题</p>
+        <h2 id="faq-title">关于免费动漫在线观看的四个问题</h2>
+      </div>
+      <details class="faq-item" open>
+        <summary>“动漫官网在线观看免费”里的官网指什么？</summary>
+        <p>一般指作品所属平台的官方番剧页面，而不是第三方转载页。官方页面的集数、简介与更新信息相对可靠，也更容易判断内容是否仍在提供。</p>
+      </details>
+      <details class="faq-item">
+        <summary>免费观看需要注册账号吗？</summary>
+        <p>视平台而定。有的平台允许未登录直接观看免费集，有的需要登录后记录进度。页面不代为承诺具体规则，以播放页提示为准。</p>
+      </details>
+      <details class="faq-item">
+        <summary>新番一般多久更新一集？</summary>
+        <p>多数电视动画按周更新，每周固定时间上线一集。遇到停播或调整，平台会在更新页说明，追更时以更新页的时间表为准。</p>
+      </details>
+      <details class="faq-item">
+        <summary>找不到想看的番剧怎么办？</summary>
+        <p>先用目录页的题材筛选缩小范围，再用搜索框输入作品名。若仍无结果，可能是该作品未在当前平台提供，或已下架，可以换个平台入口核对。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section aria-labelledby="cta-title" style="padding-top:0;">
+    <div class="wrap">
+      <div class="strip">
+        <div>
+          <h2 id="cta-title">从目录开始，找到下一部要看的番</h2>
+          <p>动漫官网在线观看免费主题页把入口、目录与须知放在一起，先筛选，再观看，少走弯路。</p>
+        </div>
+        <div class="actions">
+          <a class="btn-primary" href="#catalog">去番剧目录</a>
+          <a class="btn-ghost" href="#entry">回看入口说明</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#ffb347"/>
+            <circle cx="32" cy="32" r="17" fill="none" stroke="#1b1f3b" stroke-width="4"/>
+            <path d="M27 23l16 9-16 9z" fill="#1b1f3b"/>
+          </svg>
+          <span>动漫官网在线观看免费</span>
+        </div>
+        <p style="margin:0;">围绕免费动漫在线观看整理的观看主题页，提供入口分类、番剧目录与观看须知，帮助观众更快确认内容与更新状态。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#entry">观看入口</a></li>
+          <li><a href="#catalog">番剧目录</a></li>
+          <li><a href="#guide">观看须知</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关主题</h4>
+        <ul>
+          <li><a href="#catalog">免费动漫在线看</a></li>
+          <li><a href="#catalog">新番追更目录</a></li>
+          <li><a href="#guide">番剧播放范围说明</a></li>
+          <li><a href="#faq">观看常见疑问</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2024 动漫官网在线观看免费 · 本页内容为观看主题整理，具体播放情况以各平台页面为准。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var chips = document.querySelectorAll('.chip');
+  var cards = document.querySelectorAll('.anime');
+  var input = document.getElementById('anime-search');
+  var empty = document.getElementById('empty-tip');
+  var currentFilter = 'all';
+
+  function apply(){
+    var q = (input.value || '').trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function(card){
+      var cat = card.getAttribute('data-cat');
+      var name = (card.getAttribute('data-name') || '').toLowerCase();
+      var okCat = currentFilter === 'all' || cat === currentFilter;
+      var okName = !q || name.indexOf(q) !== -1;
+      var show = okCat && okName;
+      card.style.display = show ? '' : 'none';
+      if(show) visible++;
+    });
+    empty.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      currentFilter = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+
+  input.addEventListener('input', apply);
+})();
+</script>
+</body>
+  </html>
